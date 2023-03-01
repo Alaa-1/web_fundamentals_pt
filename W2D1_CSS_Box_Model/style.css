@@ -1,0 +1,104 @@
+/* universal selector */
+/* * {
+    background-color: aquamarine;
+} */
+
+/* button {
+    font-size: 30px;
+} */
+
+/* The id selector
+#button2 {
+    color:blue;
+    background-color: beige;
+}
+
+#flask {
+    font-size: 8px;
+}
+
+/* A class selector */
+/* .bold-text{
+    font-weight: 800;
+    color: aqua;
+} */
+
+/* rgb stands for red, green, blue */
+
+.dark {
+    color:rgb(133, 2, 2);
+}
+
+
+/* The Descendant Selector */
+
+/* li a {
+    color: teal;
+} */
+
+/* The adjacent selector */
+
+/* img + a {
+    color: red;
+} */
+
+
+/* The direct child */
+
+/* div > ul {
+
+
+} */
+
+/* #user-image {
+
+    width: 100px;
+
+} */
+
+/* h1{
+    border: 2px purple dashed;
+
+    padding: 10px 5px 0 100px;
+            /* t    r  b   l */
+
+
+/* button{
+    padding: 5px;
+} */ 
+
+/* img {
+    width: 10px;
+
+} */
+
+/* div > img { 
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px; 
+ } */
+
+ /* we can give the same styling to multiple selectors by using a comma */
+ table, th, td {
+    border: 1px solid;
+  }
+
+
+/*! Specificity CSS */
+/* https://specificity.keegan.st/ */
+
+/* ID >
+Classes >
+Element */
+
+.header{
+    color: yellow;
+}
+
+h1 {
+    color:  red;
+}
+
+#strongest{
+    color: green;
+}
