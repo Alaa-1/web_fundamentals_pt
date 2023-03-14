@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!-- the navbar starts here -->
+        <div id="nav">
+            <div id="logo-title">
+                <img src="images\nft-logo.png" alt="NFT logo">
+                <h1><span>NFT</span>STORE</h1>
+            </div>
+            <div class="auth">
+                <button class="btn" onclick="signIn(this)">Register</button>
+                <button class="btn" onclick="signIn(this)" id="login">Login</button>
+            </div>
+
+        </div>
+
+        <!-- main content starts here -->
+        <div id="main-content">
+
+            <div class="nft-card">
+                <img src="images\1.jpg" alt="King ape NFT">
+                <h1>Price : 5 M $</h1>
+                <div class="actions">
+                    <p>5 Likes</p>
+                    <div class="action-button">
+                        <button>Like</button>
+                        <button onclick="hide(this)">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft-card">
+                <img src="images\1.jpg" alt="King ape NFT">
+                <h1>Price : 5 M $</h1>
+                <div class="actions">
+                    <p>5 Likes</p>
+                    <div class="action-button">
+                        <button>Like</button>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft-card">
+                <img src="images\2.jpg" alt="King ape NFT" onmouseover="changeImage(this)" onmouseout="changeImage2(this)">
+                <h1>Price : 5 M $</h1>
+                <div class="actions">
+                    <p><span id="likesNum">2 </span>Likes</p>
+                    <div class="action-button">
+                        <button onclick="like('likesNum')">Like</button>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nft-card">
+                <img src="images\1.jpg" alt="King ape NFT">
+                <h2>Price : 5 M $</h2>
+                <div class="actions">
+                    <p>5 Likes</p>
+                    <div class="action-button">
+                        <button>Like</button>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="popup">
+            <p>This site makes use of third-party cookies. By clicking "I Accept" you agree to the terms outlined in our
+                <a href="#">cookie policy</a></p>
+            <button onclick="hideCookie('popup')">I Accept</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
